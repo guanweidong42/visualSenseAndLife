@@ -19,6 +19,7 @@
 		C6846F57197E425000B13D94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6846F3F197E425000B13D94 /* UIKit.framework */; };
 		C6846F5F197E425000B13D94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6846F5D197E425000B13D94 /* InfoPlist.strings */; };
 		C6846F61197E425000B13D94 /* visualSenseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6846F60197E425000B13D94 /* visualSenseTests.m */; };
+		C6846F71197E65D500B13D94 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6846F70197E65D500B13D94 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C6846F5C197E425000B13D94 /* visualSenseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "visualSenseTests-Info.plist"; sourceTree = "<group>"; };
 		C6846F5E197E425000B13D94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6846F60197E425000B13D94 /* visualSenseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visualSenseTests.m; sourceTree = "<group>"; };
+		C6846F70197E65D500B13D94 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			files = (
 				C6846F3E197E425000B13D94 /* CoreGraphics.framework in Frameworks */,
 				C6846F40197E425000B13D94 /* UIKit.framework in Frameworks */,
+				C6846F71197E65D500B13D94 /* opencv2.framework in Frameworks */,
 				C6846F3C197E425000B13D94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +99,7 @@
 		C6846F3A197E425000B13D94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6846F6E197E65D500B13D94 /* OpenCV */,
 				C6846F3B197E425000B13D94 /* Foundation.framework */,
 				C6846F3D197E425000B13D94 /* CoreGraphics.framework */,
 				C6846F3F197E425000B13D94 /* UIKit.framework */,
@@ -142,6 +146,22 @@
 				C6846F5D197E425000B13D94 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6846F6E197E65D500B13D94 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				C6846F6F197E65D500B13D94 /* 2.4.9 */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		C6846F6F197E65D500B13D94 /* 2.4.9 */ = {
+			isa = PBXGroup;
+			children = (
+				C6846F70197E65D500B13D94 /* opencv2.framework */,
+			);
+			path = 2.4.9;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +379,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCV/2.4.9",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "visualSense/visualSense-Prefix.pch";
 				INFOPLIST_FILE = "visualSense/visualSense-Info.plist";
@@ -373,6 +397,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCV/2.4.9",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "visualSense/visualSense-Prefix.pch";
 				INFOPLIST_FILE = "visualSense/visualSense-Info.plist";
@@ -441,6 +469,7 @@
 				C6846F66197E425000B13D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6846F67197E425000B13D94 /* Build configuration list for PBXNativeTarget "visualSenseTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +478,7 @@
 				C6846F69197E425000B13D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
