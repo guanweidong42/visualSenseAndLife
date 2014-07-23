@@ -20,7 +20,6 @@
 		C6846F5F197E425000B13D94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6846F5D197E425000B13D94 /* InfoPlist.strings */; };
 		C6846F61197E425000B13D94 /* visualSenseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6846F60197E425000B13D94 /* visualSenseTests.m */; };
 		C6846F71197E65D500B13D94 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6846F70197E65D500B13D94 /* opencv2.framework */; };
-		C6A479E1197E90BA00B38D63 /* RooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A479E0197E90BA00B38D63 /* RooViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +50,6 @@
 		C6846F5E197E425000B13D94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6846F60197E425000B13D94 /* visualSenseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = visualSenseTests.m; sourceTree = "<group>"; };
 		C6846F70197E65D500B13D94 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		C6A479DF197E90BA00B38D63 /* RooViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RooViewController.h; sourceTree = "<group>"; };
-		C6A479E0197E90BA00B38D63 /* RooViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RooViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +113,6 @@
 			children = (
 				C6846F4A197E425000B13D94 /* AppDelegate.h */,
 				C6846F4B197E425000B13D94 /* AppDelegate.m */,
-				C6A479DF197E90BA00B38D63 /* RooViewController.h */,
-				C6A479E0197E90BA00B38D63 /* RooViewController.m */,
 				C6846F4D197E425000B13D94 /* Images.xcassets */,
 				C6846F42197E425000B13D94 /* Supporting Files */,
 			);
@@ -265,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6846F4C197E425000B13D94 /* AppDelegate.m in Sources */,
-				C6A479E1197E90BA00B38D63 /* RooViewController.m in Sources */,
 				C6846F48197E425000B13D94 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
