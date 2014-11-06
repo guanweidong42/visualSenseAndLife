@@ -10,7 +10,6 @@
 
 #include "opencv2/legacy/compat.hpp"
 
-
 @implementation Utility
 
 void GenerateGaussModel(double model[]);
